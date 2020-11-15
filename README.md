@@ -9,7 +9,7 @@
 * Statistical functions.
 * Operation on CSV file (writing, reading, appending data rows, deleting rows).
 * Bar charts.
-* Functions.
+* Searching functions.
 
 ![example1](https://github.com/KarolinaLewinska/Project_Python/blob/main/example1.PNG)
 

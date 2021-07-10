@@ -1,5 +1,5 @@
 # Python Project
-* Data analysis on Udemy courses' CSV file from kaggle,com: [click here](https://www.kaggle.com/andrewmvd/udemy-coursesfbclid=IwAR2uEGkwMnWc5xe3f_phCR2a5QjSI7AmQWvbghWjAOHKJaNL5adRfYJ0Mtk)
+* Data analysis on Udemy courses' CSV file from kaggle.com
 * Jupyther Notebook
 * Libraries: pandas, csv, os, re
 * Statistical functions

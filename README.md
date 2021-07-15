@@ -1,4 +1,5 @@
 # Python Project
+The other co-authors: [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
 * Data analysis on Udemy courses' CSV file from kaggle.com
 * Jupyther Notebook
 * Libraries: pandas, csv, os, re
@@ -15,5 +16,3 @@
 ![example4](https://github.com/KarolinaLewinska/Project_Python/blob/main/example4.PNG)
 
 ![example5](https://github.com/KarolinaLewinska/Project_Python/blob/main/example5.PNG)
-
-

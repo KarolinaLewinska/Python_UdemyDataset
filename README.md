@@ -1,11 +1,11 @@
 # Python Project
 The other co-authors: [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
-* Data analysis on Udemy courses' CSV file from kaggle.com
-* Jupyther Notebook
-* Libraries: pandas, csv, os, re
-* Statistical functions
-* CSV file (writing, reading, appending data rows, deleting rows)
-* Bar charts
+* Data analysis on Udemy courses' CSV file from kaggle.com,
+* Jupyther Notebook,
+* Libraries: pandas, csv, os, re,
+* Statistical functions,
+* CSV file (writing, reading, appending data rows, deleting rows),
+* Bar charts.
 
 ![example1](https://github.com/KarolinaLewinska/Project_Python/blob/main/example1.PNG)
 

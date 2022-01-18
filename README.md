@@ -7,7 +7,7 @@ The other co-authors: [Natalia Skórowska](https://github.com/NataliaSkorowska),
 * CSV file (writing, reading, appending data rows, deleting rows),
 * Bar charts.
 
-# Sample results
+## Sample results
 ![example1](https://github.com/KarolinaLewinska/Project_Python/blob/main/example1.PNG)
 
 ![example2](https://github.com/KarolinaLewinska/Project_Python/blob/main/example2.PNG)

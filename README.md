@@ -1,5 +1,7 @@
 # Python Project
-The other co-authors: [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
+**Co-authors:**<br />
+[Natalia Skórowska](https://github.com/NataliaSkorowska)<br />
+[Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
 
 ## Description
 * Data analysis of Udemy courses' CSV file from [kaggle.com](https://www.kaggle.com/andrewmvd/udemy-courses),

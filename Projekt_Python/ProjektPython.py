@@ -89,79 +89,79 @@ Less100.reset_index(drop = True, inplace = True)
 Less100
 
 
-# In[ ]:
+# In[18]:
 Less100.to_csv("Less100Subscribtions.csv")
 
 
-# In[18]:
+# In[19]:
 Reviews = UdemyCourses.loc[UdemyCourses['num_reviews'] >= 500] 
 Reviews.count()
 
 
-# In[19]:
+# In[20]:
 MaxSub = UdemyCourses["num_subscribers"].max()
 Max = UdemyCourses.loc[(UdemyCourses["num_subscribers"] == MaxSub)]
 Max
 
 
-# In[20]:
+# In[21]:
 MaxP = UdemyCourses["price"].max()
 MaxPrice = UdemyCourses.loc[(UdemyCourses["price"] == MaxP)]
 MaxPrice
 
 
-# In[21]:
+# In[22]:
 UdemyCourses[(UdemyCourses.is_paid == False) & (UdemyCourses.subject == "Web Development")]
 
 
-# In[22]:
+# In[23]:
 BeginnerCourses = UdemyCourses.loc[~(UdemyCourses['level'].str.contains('Beginner'))]
 BeginnerCourses
 
 
-# In[23]:
+# In[24]:
 UdemyCourses.loc[UdemyCourses['course_title'].str.contains("Photoshop", regex = True)] 
 
 
-# In[24]:
+# In[25]:
 UdemyCourses.content_duration.mean()
 
 
-# In[25]:
+# In[26]:
 UdemyCourses.groupby(['level']).mean() 
 
 
-# In[26]:
+# In[27]:
 UdemyCourses.sort_values(by = ['published_timestamp'], ascending = False) 
 
 
-# In[27]:
+# In[28]:
 sum = UdemyCourses['count'] = 1
 UdemyCourses.groupby(["subject"]).sum()['count']
 
 
-# In[28]:
+# In[29]:
 UdemyCourses.groupby(['level']).count()['count']
 
 
-# In[29]:
+# In[30]:
 UdemyCourses['price'].hist()
 
 
-# In[ ]:
+# In[31]:
 UdemyCourses['level'].hist()
 
 
-# In[30]:
+# In[32]:
 def priceRange(min, max):
     display(UdemyCourses.loc[(UdemyCourses.price >= min) & (UdemyCourses.price <= max)])
 
 
-# In[31]:
+# In[33]:
 priceRange(20,100)
 
 
-# In[33]:
+# In[34]:
 def searchSubject():
     try:
         searched = int(input("Choose a number to select courses: \n 1.Business Finance\n 2.Graphic Design\n 3.Musical Instruments\n 4.Web Development\n"))
@@ -179,38 +179,38 @@ def searchSubject():
         print("Input a correct number!", y)      
 
 
-# In[34]:
+# In[35]:
 searchSubject()
 
 
-# In[35]:
+# In[36]:
 def searchKeyword(keyword):
     display(UdemyCourses.loc[(UdemyCourses['course_title'].str.contains(keyword))])   
 
 
-# In[36]:
+# In[37]:
 searchKeyword("HTML")
 
 
-# In[37]:
+# In[38]:
 def searchPopular(n):
     display(UdemyCourses.nlargest(n, ['num_subscribers']))
 
 
-# In[38]:
+# In[39]:
 searchPopular(10)
 
 
-# In[39]:
+# In[40]:
 def searchID(ID):
     display(UdemyCourses.loc[(UdemyCourses['course_id'] == ID)])
 
 
-# In[40]:
+# In[41]:
 searchID(130064)
 
 
-# In[ ]:
+# In[42]:
 with open('UdemyCourses.csv', 'a', newline = '') as NewCourses:
     Writer = csv.writer(NewCourses, delimiter = ',')
     Writer.writerow([423542] + ['Python - Free Tutorial'] + ["https://www.udemy.com/Python-Free-Tutorial"] + [True] + [20] + [400] + [21] + [20] + ["All Levels"] + [2] + ["2015-11-19T14:22:47Z"] + ["Business Finance"])
@@ -218,14 +218,14 @@ with open('UdemyCourses.csv', 'a', newline = '') as NewCourses:
     Writer.writerow([625311] + ['MVC Expert'] + ["https://www.udemy.com/MVCExper"] + [True] + [1000] + [1010] + [112] + [244] + ["Expert Level"] + [533] + ["2020-10-15T08:11:47Z"] + ["Web Development"])
 
 
-# In[ ]:
+# In[43]:
 UdemyCourses = pd.read_csv("UdemyCourses.csv")
 UdemyCourses
 
 
-# In[41]:
+# In[44]:
 UdemyCourses = UdemyCourses[UdemyCourses.course_id != 297602]
 
 
-# In[ ]:
+# In[45]:
 searchID(297602)
